@@ -1,0 +1,76 @@
+html{
+    font-size: 62.5%; /* Reset para REMS*/
+    background: lightgray;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+
+
+}
+
+/**Global **/
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+    background:darkgray;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+/*Utilidades */
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna{
+    flex-basis: calc(50% - 1rem);
+}
+
+
+/*Ocultar */
+
+.ocultar {
+    display: none
+}
+
+footer {
+    color:rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    background: dimgray;
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}

@@ -12,3 +12,18 @@
 * Julián Velasco
 
 
+## Descripción del producto
+
+## Arquitectura y diseño detallado
+
+### Modelo E-R (Entidad-Relación)
+### Diagrama de clases
+### Descripción de la arquitectura y tecnologías utilizadas
+### Enlace de la aplicación en Heroku
+### Integración continua
+### Calidad del código
+
+## Descripción del proceso
+
+
+
