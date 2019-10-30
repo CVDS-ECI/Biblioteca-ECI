@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Registro de clientes</title>        
+        <link rel="stylesheet" type="text/css" href="/css/normalize.css" media ="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media ="screen" />
+    </h:head>
+    <h:body>
+
+
+        <h:form id="tabla_clientes">
+            <p:dataTable id="singleDT" var="cliente" value="#{AlquilerItemsBean.consultarClientes()}"
+                         paginator="true" paginatorTemplate="{FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+                         rows="10">
+                <f:facet name="header">
+                    Clientes registrados:
+                </f:facet>
+                <p:column headerText="Nombre">
+                    <h:outputText value="#{cliente.nombre}" />
+                </p:column>
+
+                <p:column headerText="Documento">
+                    <h:outputText value="#{cliente.documento}" />
+                </p:column>
+
+                <p:column headerText="Teléfono">
+                    <h:outputText value="#{cliente.telefono}" />
+                </p:column>
+
+                <p:column headerText="Dirección">
+                    <h:outputText value="#{cliente.direccion}" />
+                </p:column>
+
+                <p:column headerText="E-mail">
+                    <h:outputText value="#{cliente.email}" />
+                </p:column>
+                <p:column headerText="Items Rentados">
+                    <h:commandLink action="registroalquiler?faces-redirect = true" value="Ver">
+                        <f:setPropertyActionListener value="#{cliente}" target="#{AlquilerItemsBean.clienteSeleccionado}"/>
+                    </h:commandLink>
+                </p:column>
+
+            </p:dataTable>
+             <section>
+
+
+                <p:panel id="panel" header="Registrar nuevo cliente">
+
+                    <h:panelGrid id="grid" cellpadding="5" columns="2">
+
+                        <p:outputLabel value="Nombre: "/>
+                        <p:inputText id="Nombre" type="String" binding="#{nombre}"/>
+
+                        <p:outputLabel value="Documento: "/>
+                        <p:inputText id="Documento" type="long" binding="#{documento}"/>
+
+                        <p:outputLabel value="Teléfono: "/>
+                        <p:inputText id="Telefono" type="String" binding="#{telefono}"/>
+
+                        <p:outputLabel value="Direccion: "/>
+                        <p:inputText id="Direccion" type="String" binding="#{direccion}"/>
+
+                        <p:outputLabel value="Email: "/>
+                        <p:inputText id="Email" type="String" binding="#{email}"/>
+
+                        <p:commandButton update="tabla_clientes" actionListener="#{AlquilerItemsBean.registrarCliente(nombre.value,documento.value,telefono.value,direccion.value,email.value)}" value="Registrar Cliente"/>
+
+                    </h:panelGrid>
+
+
+                </p:panel>
+
+               </section>
+
+
+        </h:form>
+
+    </h:body>
+</html>

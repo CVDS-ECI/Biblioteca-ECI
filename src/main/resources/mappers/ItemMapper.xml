@@ -55,7 +55,7 @@
     </select>
     
     <select parameterType="map" id="calcularCostoAlquiler" resultMap="ItemResult">
-        SELECT #{numDias}*tarifaxdia
+        SELECT tarifaxdia*#{numDias}
         FROM VI_ITEMS
         WHERE #{itemId} = id
     </select>
