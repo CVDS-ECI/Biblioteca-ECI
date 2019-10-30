@@ -25,5 +25,5 @@
 
 ## Descripción del proceso
 
-![efe](https://i.ibb.co/cg8VYWH/diagrama-sprint-1.png)
+![Diagrama de clases sprint 1](https://i.ibb.co/cg8VYWH/diagrama-sprint-1.png)
 
