@@ -48,4 +48,4 @@ jobs:
           - run:
               name: Deploy Master to Heroku
               command: |
-                git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+                git push https://heroku:$680aca22-c2fe-40fe-b88d-2555f961b793Y@git.heroku.com/$ecibrary.git master
