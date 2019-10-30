@@ -26,5 +26,5 @@
 ## Descripción del proceso
 
 ## Diagrama de clases
-![Diagrama de clases sprint 1](https://i.ibb.co/cg8VYWH/diagrama-sprint-1.png)
+![Diagrama de clases sprint 1 y 2](https://i.ibb.co/JmK6fCD/ppppp.png)
 
