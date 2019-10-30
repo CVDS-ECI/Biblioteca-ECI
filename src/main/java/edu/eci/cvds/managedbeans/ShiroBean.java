@@ -19,7 +19,7 @@ public class ShiroBean {
 	@ManagedBean(name = "iniciar_sesion")
 	@SessionScoped
 	
-	private static final Logger logger = LoggerFactory.getLogger(InputSecretBackingBean.class);
+	private static final Logger logger = LaboratoryServicesFactory.getLogger(InputSecretBackingBean.class);
 	 
 	@ManagedProperty(value = "#{inputSecretModelBean}")
 	private InputSecretModelBean inputSecretModelBean;
