@@ -81,4 +81,10 @@ public class LaboratoryServicesImpl implements LaboratoryServices {
         }
     }
 
+	@Override
+	public boolean iniciar_sesion(String correo, String clave) throws ServicesException {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
 }

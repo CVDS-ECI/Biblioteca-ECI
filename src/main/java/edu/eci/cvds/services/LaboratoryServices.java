@@ -6,7 +6,11 @@ import edu.eci.cvds.entities.Computer;
 import edu.eci.cvds.entities.Element;
 import edu.eci.cvds.entities.Laboratory;
 
+
 public interface LaboratoryServices {
+	
+	
+	public boolean iniciar_sesion(String correo,String clave) throws ServicesException;
 
 	/**
 	 * Create laboratory
