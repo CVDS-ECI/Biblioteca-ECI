@@ -25,6 +25,6 @@ import edu.eci.cvds.entities.Computer;
 
 public interface ElementMapper {
         
-        List<Element> buscarElementosAsociados(@Param("id") int id);
+        List<Recurso> buscarElementosAsociados(@Param("id") int id);
 
 }

@@ -10,11 +10,14 @@ import javax.faces.context.FacesContext;
 import javax.faces.event.PhaseId;
 import javax.faces.event.ValueChangeEvent;
 import javax.faces.validator.ValidatorException;
-@ManagedBean
-@RequestScoped
+
+import edu.eci.cvds.services.LaboratoryServicesFactory;
+//@ManagedBean
+//@RequestScoped
 
 
 public class ShiroBean {
+	/*
 	@SuppressWarnings("deprecation")
 	@ManagedBean(name = "iniciar_sesion")
 	@SessionScoped
@@ -24,6 +27,7 @@ public class ShiroBean {
 	@ManagedProperty(value = "#{inputSecretModelBean}")
 	private InputSecretModelBean inputSecretModelBean;
  
+	
 	public void emailAddressValidator(FacesContext facesContext, UIComponent uiComponent, Object value)
 		throws ValidatorException {
  
@@ -81,4 +85,5 @@ public class ShiroBean {
 		facesMessage.setSummary(summary);
 		facesContext.addMessage(null, facesMessage);
 	}
+	*/
 }

@@ -19,7 +19,7 @@ package edu.eci.cvds.persistence;
 import java.util.List;
 
 import edu.eci.cvds.entities.Computer;
-import edu.eci.cvds.entities.Element;
+import edu.eci.cvds.entities.Recurso;
 
 public interface ComputerDAO {
 
@@ -29,7 +29,7 @@ public interface ComputerDAO {
 
 	public void update(Computer c) throws PersistenceException;
 
-	public void addElement(int computerId, Element element) throws PersistenceException;
+	public void addElement(int computerId, Recurso element) throws PersistenceException;
 
 	public Computer load(int computerID) throws PersistenceException;
 
@@ -39,5 +39,5 @@ public interface ComputerDAO {
 
 	public List<Computer> loadByLaboratory(String name) throws PersistenceException;
         
-        public List<Element> loadAssociatedElements(int id) throws PersistenceException;
+        public List<Recurso> loadAssociatedElements(int id) throws PersistenceException;
 }

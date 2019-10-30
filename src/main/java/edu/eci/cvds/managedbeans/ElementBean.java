@@ -8,7 +8,7 @@ import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 
 import edu.eci.cvds.entities.Computer;
-import edu.eci.cvds.entities.Element;
+import edu.eci.cvds.entities.Recurso;
 import edu.eci.cvds.services.LaboratoryServices;
 import edu.eci.cvds.services.ServicesException;
 import java.util.logging.Level;
@@ -31,7 +31,7 @@ public class ElementBean extends BasePageBean {
     @Inject
     private LaboratoryServices laboratoryServices;
 
-    public List<Element> getElements() throws Exception {
+    public List<Recurso> getElements() throws Exception {
         try {
             if (computer == null) {
                 return null;

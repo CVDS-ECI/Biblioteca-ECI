@@ -3,7 +3,7 @@ package edu.eci.cvds.services;
 import java.util.List;
 
 import edu.eci.cvds.entities.Computer;
-import edu.eci.cvds.entities.Element;
+import edu.eci.cvds.entities.Recurso;
 import edu.eci.cvds.entities.Laboratory;
 
 
@@ -52,7 +52,7 @@ public interface LaboratoryServices {
 	 * @return a list of elements found
 	 * @throws ServicesException
 	 */
-	public List<Element> searchElementsByComputerReference(String reference) throws ServicesException;
+	public List<Recurso> searchElementsByComputerReference(String reference) throws ServicesException;
 
 	/**
 	 * Find all computers that are incomplete
@@ -62,6 +62,6 @@ public interface LaboratoryServices {
 	 */
 	public List<Computer> searchIncompleteComputers() throws ServicesException;
         
-        public List<Element> buscarElementosAsociadosAUnComputador(int cId) throws ServicesException;
+        public List<Recurso> buscarElementosAsociadosAUnComputador(int cId) throws ServicesException;
 
 }

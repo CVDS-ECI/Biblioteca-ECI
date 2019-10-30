@@ -10,13 +10,13 @@ public class Computer {
 	private int id;
 	private String name;
 	private boolean active;
-	private List<Element> elements;
+	private List<Recurso> elements;
 
 	public Computer() {
 		this.elements = new ArrayList<>();
 	}
 
-	public Computer(String name, boolean active, List<Element> elements) {
+	public Computer(String name, boolean active, List<Recurso> elements) {
 
 		this.name = name;
 		this.active = active;
@@ -47,11 +47,11 @@ public class Computer {
 		this.active = active;
 	}
 
-	public List<Element> getElements() {
+	public List<Recurso> getElements() {
 		return elements;
 	}
 
-	public void setElements(List<Element> elements) {
+	public void setElements(List<Recurso> elements) {
 		this.elements = elements;
 	}
 
@@ -59,7 +59,7 @@ public class Computer {
 	public String toString() {
 		StringBuilder rep = new StringBuilder(
 				"Computer: { id:" + id + ", name: " + name + ", active: " + active + ", elements : [\n");
-		for (Element comment : elements) {
+		for (Recurso comment : elements) {
 			rep.append(comment + "\n");
 		}
 		rep.append("]}");

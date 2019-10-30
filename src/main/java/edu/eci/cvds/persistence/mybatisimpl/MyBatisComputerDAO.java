@@ -21,7 +21,7 @@ import java.util.List;
 import com.google.inject.Inject;
 
 import edu.eci.cvds.entities.Computer;
-import edu.eci.cvds.entities.Element;
+import edu.eci.cvds.entities.Recurso;
 import edu.eci.cvds.persistence.ComputerDAO;
 import edu.eci.cvds.persistence.PersistenceException;
 import edu.eci.cvds.persistence.mybatisimpl.mappers.*;
@@ -50,7 +50,7 @@ public class MyBatisComputerDAO implements ComputerDAO {
 	}
 
 	@Override
-	public void addElement(int computerId, Element element) throws PersistenceException {
+	public void addElement(int computerId, Recurso element) throws PersistenceException {
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
@@ -70,7 +70,7 @@ public class MyBatisComputerDAO implements ComputerDAO {
 	}
 
     @Override
-    public List<Element> loadAssociatedElements(int id) throws PersistenceException {
+    public List<Recurso> loadAssociatedElements(int id) throws PersistenceException {
         return elementMapper.buscarElementosAsociados(id);
     }
 
